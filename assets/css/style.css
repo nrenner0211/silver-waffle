@@ -2,9 +2,41 @@
     list-style: none;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .header {
-    background-color: #8baee7;
-    
+    background: linear-gradient(45deg, #e9f2ff, #ADB2D3 , #383e81);
+    width: 100%;
+    padding: 20px;
+    color: white;
+    text-shadow: 0 20px 20px rgba(0,0,0,.3);
+    position: sticky;
+    z-index: 999;
+}
+
+.subtitle {
+    padding-top: 20px;
+}
+
+#emoji-btn {
+    font-size: 3rem;
+    transition: .1s;
+    border: none;
+    cursor: pointer;
+}
+  
+#emoji-btn:hover {
+    transform: scale(2.5);
+}
+
+.btn {
+    width: 100%;
+    margin-top: 15px;
+}
+.form-input {
+    width: 100%;
 }
 
 .sidebar, .sidebar-container {
