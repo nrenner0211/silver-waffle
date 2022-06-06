@@ -1,0 +1,16 @@
+* {
+    list-style: none;
+}
+
+.header {
+    background-color: #8baee7;
+    
+}
+
+.sidebar, .sidebar-container {
+    top: 0;
+    left: 0;
+    width: 325px;
+    height: 100%;
+    position: fixed;
+}
