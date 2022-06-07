@@ -20,14 +20,14 @@ body {
     padding-top: 20px;
 }
 
-#emoji-btn {
+#iconArray {
     font-size: 3rem;
     transition: .1s;
     border: none;
     cursor: pointer;
 }
   
-#emoji-btn:hover {
+#iconArray:hover {
     transform: scale(2.5);
 }
 
