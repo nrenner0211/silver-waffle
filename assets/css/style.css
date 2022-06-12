@@ -16,8 +16,17 @@ body {
     z-index: 999;
 }
 
-.subtitle {
-    padding-top: 20px;
+.btn {
+    width: 100%;
+    margin-top: 15px;
+}
+.form-input {
+    width: 100%;
+    height: auto;
+}
+
+#weather {
+    padding: 20px;
 }
 
 #iconArray {
@@ -29,20 +38,4 @@ body {
   
 #iconArray:hover {
     transform: scale(2.5);
-}
-
-.btn {
-    width: 100%;
-    margin-top: 15px;
-}
-.form-input {
-    width: 100%;
-}
-
-.sidebar, .sidebar-container {
-    top: 0;
-    left: 0;
-    width: 325px;
-    height: 100%;
-    position: fixed;
 }
