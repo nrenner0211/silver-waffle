@@ -1,21 +1,18 @@
 //global variables
-// var requestURL = fetch('https://api.openweathermap.org/data/2.5/onecall?lat=39.526329&lon=-80.341248&appid=b220da5617847bf30789df166df8a1aa&units=imperial').then(function(response) {
-//     response.json().then(function(data) {
-//         console.log(data)
-//     })
-// });
+var api = 'https://api.openweathermap.org/data/2.5/weather?q=';
+var city = 'London';
+var apiKey = '&appid=56983c8d4b843493cded7cc811106a23';
+var units = '&units=imperial';
 
-var geocodingURL = 'https://api.openweathermap.org/geo/1.0/direct';
-var searchBox;
-var oneCall = 'https://api.openweathermap.org/data/2.5/onecall';
+
 
 let weather = {
     myKey: "b220da5617847bf30789df166df8a1aa",
 
     //fetch weather
     fetchWeather: function (city) {
-        fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + this.myKey)
-            
+        fetch('https://api.openweathermap.org/data/2.5/' + city + '&units=imperial&appid=' + this.myKey
+        )
             .then((response) => response.json())
             .then((data) => this.displayWeather(data))
             .catch((error) => console.log(error));
@@ -40,7 +37,7 @@ let weather = {
         }
     },
     search: function () {
-        this.fetchWeather(document.querySelector("#searchBtn").value);
+        this.fetchWeather(document.querySelector(".inputValue").value);
     }
 };
 
